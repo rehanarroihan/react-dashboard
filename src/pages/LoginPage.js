@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import stislaLogo from '../avatar/stisla-fill.svg';
+import unsplash from '../avatar/login-bg.jpg';
+
 class LoginPage extends Component {
   constructor(props) {
     super(props);
@@ -22,6 +25,8 @@ class LoginPage extends Component {
     if (this.state.emailInput === 'azril@gmail.com' 
           && this.state.passwordInput === 'azril') {
       this.props.history.push('/dashboard');
+    } else {
+      alert('Invalid')
     }
   };
 
@@ -32,7 +37,7 @@ class LoginPage extends Component {
           <div className="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
             <div className="p-4 m-3">
               <img
-                src="../assets/img/stisla-fill.svg"
+                src={stislaLogo}
                 alt="logo"
                 width={80}
                 className="shadow-light rounded-circle mb-5 mt-2"
@@ -56,7 +61,6 @@ class LoginPage extends Component {
                   onChange={this.updateEmailData}
                   value={this.state.emailInput}
                   required
-                  autofocus
                 />
                 <div className="invalid-feedback">Please fill in your email</div>
               </div>
@@ -128,7 +132,7 @@ class LoginPage extends Component {
           </div>
           <div
             className="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom"
-            data-background="../assets/img/unsplash/login-bg.jpg"
+            data-background={unsplash}
           >
             <div className="absolute-bottom-left index-2">
               <div className="text-light p-5 pb-2">

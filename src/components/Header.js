@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 import avatar from './../avatar/avatar-1.png';
 
 class Header extends Component {
@@ -51,9 +51,9 @@ class Header extends Component {
                   <i className="fas fa-cog" /> Settings
                 </Link>
                 <div className="dropdown-divider" />
-                <Link to={ "" } className="dropdown-item has-icon text-danger">
+                <Route to={ "/login" } className="dropdown-item has-icon text-danger">
                   <i className="fas fa-sign-out-alt" /> Logout
-                </Link>
+                </Route>
               </div>
             </li>
           </ul>

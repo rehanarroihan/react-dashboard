@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { 
-  BrowserRouter as Router,
-  Route 
+  BrowserRouter,
+  Route, 
 } from "react-router-dom";
+
+import routes from "./routes";
 
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
@@ -14,10 +16,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <Route exact path="/login" component={LoginPage}></Route>
-          <Route exact path="/dashboard" component={DashboardPage}></Route>
-        </Router>
+        <BrowserRouter>
+          <Route exact path={routes.login} component={LoginPage}></Route>
+          <Route path={routes.dashboard} component={DashboardPage}></Route>
+        </BrowserRouter>
       </div>
     );
   }

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Blank extends Component {
+class Delivery extends Component {
   state = {  }
   render() { 
     return ( 
       <div className="main-content">
           <section className="section">
             <div className="section-header">
-              <h1>Blank Page</h1>
+              <h1>Delivery Page</h1>
             </div>
   
             <div className="section-body">
@@ -18,4 +18,4 @@ class Blank extends Component {
   }
 }
  
-export default Blank;
+export default Delivery;
