@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import stislaLogo from '../avatar/stisla-fill.svg';
-import unsplash from '../avatar/login-bg.jpg';
+
+import hello from '../avatar/login-bgs.jpg';
 
 class LoginPage extends Component {
   constructor(props) {
@@ -131,33 +132,18 @@ class LoginPage extends Component {
             </div>
           </div>
           <div
+            data-background={hello}
+            style={{backgroundColor: "blue"}}
             className="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom"
-            data-background={unsplash}
           >
             <div className="absolute-bottom-left index-2">
               <div className="text-light p-5 pb-2">
                 <div className="mb-5 pb-3">
-                  <h1 className="mb-2 display-4 font-weight-bold">Good Morning</h1>
+                  <h1 className="mb-2 display-4 font-weight-bold">Welcome Back</h1>
                   <h5 className="font-weight-normal text-muted-transparent">
-                    Bali, Indonesia
+                    AisySaeExpress Information System
                   </h5>
                 </div>
-                Photo by{" "}
-                <a
-                  className="text-light bb"
-                  target="_blank"
-                  href="https://unsplash.com/photos/a8lTjWJJgLA"
-                >
-                  Justin Kauffman
-                </a>{" "}
-                on{" "}
-                <a
-                  className="text-light bb"
-                  target="_blank"
-                  href="https://unsplash.com"
-                >
-                  Unsplash
-                </a>
               </div>
             </div>
           </div>

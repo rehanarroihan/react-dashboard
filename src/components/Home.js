@@ -176,79 +176,79 @@ class Home extends Component {
             </div>
 
             <div className="row">
-        <div className="col-lg-8 col-md-12 col-12 col-sm-12">
-          <div className="card">
-            <div className="card-header">
-              <h4>Statistics</h4>
-            </div>
-            <div className="card-body">
-              <LineDemo/>
-              <div className="statistic-details mt-sm-4">
-                <div className="statistic-details-item">
-                  <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span> 7%</span>
-                  <div className="detail-value">$243</div>
-                  <div className="detail-name"></div>
+              <div className="col-lg-8 col-md-12 col-12 col-sm-12">
+                <div className="card">
+                  <div className="card-header">
+                    <h4>Statistics</h4>
+                  </div>
+                  <div className="card-body">
+                    <LineDemo/>
+                    <div className="statistic-details mt-sm-4">
+                      <div className="statistic-details-item">
+                        <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span> 7%</span>
+                        <div className="detail-value">$243</div>
+                        <div className="detail-name"></div>
+                      </div>
+                      <div className="statistic-details-item">
+                        <span className="text-muted"><span className="text-danger"><i className="fas fa-caret-down" /></span> 23%</span>
+                        <div className="detail-value">$2,902</div>
+                        <div className="detail-name">This Week's Sales</div>
+                      </div>
+                      <div className="statistic-details-item">
+                        <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span>9%</span>
+                        <div className="detail-value">$12,821</div>
+                        <div className="detail-name">This Month's Sales</div>
+                      </div>
+                      <div className="statistic-details-item">
+                        <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span> 19%</span>
+                        <div className="detail-value">$92,142</div>
+                        <div className="detail-name">This Year's Sales</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="statistic-details-item">
-                  <span className="text-muted"><span className="text-danger"><i className="fas fa-caret-down" /></span> 23%</span>
-                  <div className="detail-value">$2,902</div>
-                  <div className="detail-name">This Week's Sales</div>
-                </div>
-                <div className="statistic-details-item">
-                  <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span>9%</span>
-                  <div className="detail-value">$12,821</div>
-                  <div className="detail-name">This Month's Sales</div>
-                </div>
-                <div className="statistic-details-item">
-                  <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span> 19%</span>
-                  <div className="detail-value">$92,142</div>
-                  <div className="detail-name">This Year's Sales</div>
+              </div>
+              <div className="col-lg-4 col-md-12 col-12 col-sm-12">
+                <div className="card">
+                  <div className="card-header">
+                    <h4>Aktifitas Terbaru</h4>
+                  </div>
+                  <div className="card-body">
+                    <ul className="list-unstyled list-unstyled-border">
+                      <li className="media">
+                        <img className="mr-3 rounded-circle" width={50} src={avatar} alt="avatar" />
+                        <div className="media-body">
+                          <div className="float-right text-primary">Now</div>
+                          <div className="media-title">Farhan A Mujib</div>
+                          <span className="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                        </div>
+                      </li>
+                      <li className="media">
+                        <img className="mr-3 rounded-circle" width={50} src={avatar} alt="avatar" />
+                        <div className="media-body">
+                          <div className="float-right">12m</div>
+                          <div className="media-title">Ujang Maman</div>
+                          <span className="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                        </div>
+                      </li>
+                      <li className="media">
+                        <img className="mr-3 rounded-circle" width={50} src={avatar} alt="avatar" />
+                        <div className="media-body">
+                          <div className="float-right">17m</div>
+                          <div className="media-title">Rizal Fakhri</div>
+                          <span className="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div className="text-center pt-1 pb-1">
+                      <button className="btn btn-primary btn-lg">
+                        View All
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-12 col-12 col-sm-12">
-          <div className="card">
-            <div className="card-header">
-              <h4>Aktifitas Terbaru</h4>
-            </div>
-            <div className="card-body">
-              <ul className="list-unstyled list-unstyled-border">
-                <li className="media">
-                  <img className="mr-3 rounded-circle" width={50} src={avatar} alt="avatar" />
-                  <div className="media-body">
-                    <div className="float-right text-primary">Now</div>
-                    <div className="media-title">Farhan A Mujib</div>
-                    <span className="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
-                  </div>
-                </li>
-                <li className="media">
-                  <img className="mr-3 rounded-circle" width={50} src={avatar} alt="avatar" />
-                  <div className="media-body">
-                    <div className="float-right">12m</div>
-                    <div className="media-title">Ujang Maman</div>
-                    <span className="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
-                  </div>
-                </li>
-                <li className="media">
-                  <img className="mr-3 rounded-circle" width={50} src={avatar} alt="avatar" />
-                  <div className="media-body">
-                    <div className="float-right">17m</div>
-                    <div className="media-title">Rizal Fakhri</div>
-                    <span className="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
-                  </div>
-                </li>
-              </ul>
-              <div className="text-center pt-1 pb-1">
-                <button className="btn btn-primary btn-lg">
-                  View All
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
           </div>
         </section>
