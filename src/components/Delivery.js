@@ -5,7 +5,38 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 class Delivery extends Component {
-  state = {  }
+  state = { 
+    deliveryDataList: [
+      {
+        resi: "SBY-0001",
+        destination: "Sidoarjo",
+        type: "One Day Service",
+        date: "2018-01-20",
+        status: "On Process"
+      },
+      {
+        resi: "SBY-0002",
+        destination: "Sumenep",
+        type: "Cargo",
+        date: "2018-04-10",
+        status: "On Process"
+      },
+      {
+        resi: "SBY-0003",
+        destination: "Pekalongan",
+        type: "Cargo",
+        date: "2018-04-10",
+        status: "On Delivery"
+      },
+      {
+        resi: "SBY-0003",
+        destination: "Jakarta",
+        type: "Carter",
+        date: "2018-04-10",
+        status: "Delivered"
+      },
+    ]
+  }
   render() { 
     return ( 
       <div className="main-content">
@@ -98,66 +129,24 @@ class Delivery extends Component {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>
-                              1
-                            </td>
-                            <td>SBY-0001</td>
-                            <td className="align-middle">
-                              Sidoarjo
-                            </td>
-                            <td>
-                              One Day Service
-                            </td>
-                            <td>2018-01-20</td>
-                            <td><div className="badge badge-success">Completed</div></td>
-                            <td><a className="btn btn-secondary">Detail</a></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              2
-                            </td>
-                            <td>SBY-0002</td>
-                            <td className="align-middle">
-                              Sumenep
-                            </td>
-                            <td>
-                            Cargo
-                            </td>
-                            <td>2018-04-10</td>
-                            <td><div className="badge badge-info">Todo</div></td>
-                            <td><a className="btn btn-secondary">Detail</a></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              3
-                            </td>
-                            <td>SBY-0003</td>
-                            <td className="align-middle">
-                              Pekalongan
-                            </td>
-                            <td>
-                            Cargo
-                            </td>
-                            <td>2018-01-29</td>
-                            <td><div className="badge badge-warning">In Progress</div></td>
-                            <td><a className="btn btn-secondary">Detail</a></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              4
-                            </td>
-                            <td>SBY-0004</td>
-                            <td className="align-middle">
-                              Jakarta
-                            </td>
-                            <td>
-                            Carter
-                            </td>
-                            <td>2018-01-16</td>
-                            <td><div className="badge badge-success">Completed</div></td>
-                            <td><a className="btn btn-secondary">Detail</a></td>
-                          </tr>
+                          {this.state.deliveryDataList.map((item, index) => 
+                            <tr key={`DeliveryItem${index}`}>
+                              <td>{ index+1 }</td>
+                              <td>{ item.resi }</td>
+                              <td className="align-middle">
+                                { item.destination }
+                              </td>
+                              <td>{ item.type }</td>
+                              <td>{ item.date }</td>
+                              <td>
+                                <div 
+                                  className={`badge badge-${item.status === 'On Process' ? 'danger' : item.status === 'On Delivery' ? 'primary' : 'success'}`}>
+                                  { item.status }
+                                </div>
+                              </td>
+                              <td><a className="btn btn-secondary">Detail</a></td>
+                            </tr>
+                          )}
                         </tbody>
                       </table>
                     </div>
@@ -171,5 +160,5 @@ class Delivery extends Component {
      );
   }
 }
- 
+
 export default Delivery;
