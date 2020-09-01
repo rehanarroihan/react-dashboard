@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import LineDemo from './LineDemo';
+import BalanceChart from './BalanceChart';
 
 import avatar from './../avatar/avatar-1.png';
 
@@ -76,17 +77,17 @@ class Home extends Component {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="card card-statistic-2">
                 <div className="card-chart">
-                  <canvas id="balance-chart" height={80} />
+                  <BalanceChart/>
                 </div>
                 <div className="card-icon shadow-primary bg-primary">
                   <i className="fas fa-dollar-sign" />
                 </div>
                 <div className="card-wrap">
                   <div className="card-header">
-                    <h4>Balance</h4>
+                    <h4>Keuntungan</h4>
                   </div>
                   <div className="card-body">
-                    $187,13
+                    Rp. 6.4jt
                   </div>
                 </div>
               </div>
@@ -94,14 +95,14 @@ class Home extends Component {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="card card-statistic-2">
                 <div className="card-chart">
-                  <canvas id="sales-chart" height={80} />
+                  <BalanceChart/>
                 </div>
                 <div className="card-icon shadow-primary bg-primary">
                   <i className="fas fa-shopping-bag" />
                 </div>
                 <div className="card-wrap">
                   <div className="card-header">
-                    <h4>Sales</h4>
+                    <h4>Barang Terkirim</h4>
                   </div>
                   <div className="card-body">
                     4,732
@@ -116,7 +117,7 @@ class Home extends Component {
               <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div className="card card-statistic-1">
                   <div className="card-icon bg-primary">
-                    <i className="far fa-user" />
+                    <i className="fas fa-exchange-alt" />
                   </div>
                   <div className="card-wrap">
                     <div className="card-header">
@@ -131,7 +132,7 @@ class Home extends Component {
               <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div className="card card-statistic-1">
                   <div className="card-icon bg-danger">
-                    <i className="far fa-newspaper" />
+                    <i className="fas fa-biking" />
                   </div>
                   <div className="card-wrap">
                     <div className="card-header">
@@ -146,7 +147,7 @@ class Home extends Component {
               <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div className="card card-statistic-1">
                   <div className="card-icon bg-warning">
-                    <i className="far fa-file" />
+                    <i className="fas fa-truck" />
                   </div>
                   <div className="card-wrap">
                     <div className="card-header">
@@ -161,7 +162,7 @@ class Home extends Component {
               <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div className="card card-statistic-1">
                   <div className="card-icon bg-success">
-                    <i className="fas fa-circle" />
+                    <i className="fas fa-users" />
                   </div>
                   <div className="card-wrap">
                     <div className="card-header">
@@ -187,7 +188,7 @@ class Home extends Component {
                       <div className="statistic-details-item">
                         <span className="text-muted"><span className="text-primary"><i className="fas fa-caret-up" /></span> 7%</span>
                         <div className="detail-value">$243</div>
-                        <div className="detail-name"></div>
+                        <div className="detail-name">Today's Sales</div>
                       </div>
                       <div className="statistic-details-item">
                         <span className="text-muted"><span className="text-danger"><i className="fas fa-caret-down" /></span> 23%</span>

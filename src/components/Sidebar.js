@@ -61,6 +61,16 @@ class Sidebar extends Component {
                   <span>Delivery</span>
                 </Link>
             </li>
+
+            <li className="menu-header">Lainnya</li>
+            <li>
+              <Link
+                className="nav-link"
+                to={routes.login}>
+                  <i className="fa fa-sign-out-alt" />
+                  <span>Logout</span>
+                </Link>
+            </li>
           </ul>
           
         </aside>
