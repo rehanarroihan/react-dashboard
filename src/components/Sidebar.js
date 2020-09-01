@@ -10,19 +10,19 @@ class Sidebar extends Component {
       <div className="main-sidebar">
         <aside id="sidebar-wrapper">
           <div className="sidebar-brand">
-            <Link to={routes.dashboard}>Stisla</Link>
+            <Link to={routes.dashboard}>AisySae Express</Link>
           </div>
           <div className="sidebar-brand sidebar-brand-sm">
             <Link to={routes.dashboard}>St</Link>
           </div>
           <ul className="sidebar-menu">
-            <li className="menu-header">Beranda</li>
+            <li className="menu-header">Home</li>
             <li>
               <Link
                 className="nav-link"
-                to={routes.dashboard}>
-                  <i className="fas fa-tachometer-alt" /> 
-                  <span>Beranda</span>
+                to={routes.dashboardHome}>
+                  <i className="fas fa-fire" /> 
+                  <span>Dashboard</span>
               </Link>
             </li>
 
@@ -38,7 +38,7 @@ class Sidebar extends Component {
             <li>
               <Link
                 className="nav-link"
-                to={routes.statistics}>
+                to={routes.vehicle}>
                   <i className="fa fa-truck" />
                   <span>Kendaraan</span>
                 </Link>
@@ -46,7 +46,7 @@ class Sidebar extends Component {
             <li>
               <Link
                 className="nav-link"
-                to={routes.dashboard}>
+                to={routes.customer}>
                   <i className="fa fa-users" />
                   <span>Pelanggan</span>
               </Link>
@@ -62,11 +62,7 @@ class Sidebar extends Component {
                 </Link>
             </li>
           </ul>
-          <div className="mt-4 mb-4 p-3 hide-sidebar-mini">
-            <Link to={routes.dashboard} className="btn btn-primary btn-lg btn-block btn-icon-split">
-              <i className="fas fa-rocket" /> Documentation
-            </Link>
-          </div>
+          
         </aside>
       </div>
     );

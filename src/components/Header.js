@@ -37,7 +37,7 @@ class Header extends Component {
             <li className="dropdown">
               <Link to={""} data-toggle="dropdown" className="nav-link dropdown-toggle nav-link-lg nav-link-user">
                 <img alt="Avatar of User" src={ avatar } className="rounded-circle mr-1" />
-                <div className="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+                <div className="d-sm-none d-lg-inline-block">Halo, Azril</div>
               </Link>
               <div className="dropdown-menu dropdown-menu-right">
                 <div className="dropdown-title">Logged in 5 min ago</div>

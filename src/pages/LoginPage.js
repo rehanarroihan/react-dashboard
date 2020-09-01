@@ -24,7 +24,7 @@ class LoginPage extends Component {
   submitLoginForm = () => {
     if (this.state.emailInput === 'azril@gmail.com' 
           && this.state.passwordInput === 'azril') {
-      this.props.history.push('/dashboard');
+      this.props.history.push('/dashboard/home');
     } else {
       alert('Invalid')
     }

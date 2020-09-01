@@ -5,15 +5,15 @@ class Blank extends Component {
   render() { 
     return ( 
       <div className="main-content">
-          <section className="section">
-            <div className="section-header">
-              <h1>Blank Page</h1>
-            </div>
-  
-            <div className="section-body">
-            </div>
-          </section>
-        </div>
+        <section className="section">
+          <div className="section-header">
+            <h1>Coming Soon</h1>
+          </div>
+
+          <div className="section-body">
+          </div>
+        </section>
+      </div>
      );
   }
 }

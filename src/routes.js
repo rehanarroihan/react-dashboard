@@ -4,7 +4,9 @@ export default {
   login: "/login",
   dashboard: "/dashboard",
   // Nested Dashboard pages
-  statistics: "/dashboard/statistics",
+  dashboardHome: "/dashboard/home",
   driver: "/dashboard/driver",
+  vehicle: "/dashboard/vehicle",
+  customer: "/dashboard/customer",
   delivery: "/dashboard/delivery"
 };

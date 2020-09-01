@@ -8,8 +8,8 @@ class Footer extends Component {
       <Router>
         <footer className="main-footer">
           <div className="footer-left">
-            Copyright © 2018 <div className="bullet" /> Design By 
-            <Link to="/about" />Muhamad Nauval Azhar
+            Copyright © 2018 <div className="bullet" /> Develop By 
+            <Link to="/about" /> Rehan
           </div>
           <div className="footer-right">
             2.3.0

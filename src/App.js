@@ -9,14 +9,13 @@ import routes from "./routes";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 
-import './App.css';
-
 class App extends Component {
 
   render() {
     return (
       <div className="App">
         <BrowserRouter>
+          <Route exact path={routes.home} component={LoginPage}></Route>
           <Route exact path={routes.login} component={LoginPage}></Route>
           <Route path={routes.dashboard} component={DashboardPage}></Route>
         </BrowserRouter>
